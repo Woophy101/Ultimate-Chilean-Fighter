@@ -52,8 +52,10 @@ public class PlayerController: MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Q)){
 			fighter.anim.SetTrigger("Punch");
+			fighter.punch = true;
 		}else {
 			fighter.anim.ResetTrigger("Punch");
+			fighter.punch = false;
 		}
 
 		//Patadas
@@ -61,8 +63,10 @@ public class PlayerController: MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.E)){
 			fighter.anim.SetTrigger("Kick");
+			fighter.kick = true;
 		}else {
 			fighter.anim.ResetTrigger("Kick");
+			fighter.kick = false;
 		}
 
 

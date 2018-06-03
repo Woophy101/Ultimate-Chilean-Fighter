@@ -29,16 +29,16 @@ public class CombatCollider : MonoBehaviour {
 		switch (tag) {
 		case "Collider.Atk":
 			if (col.tag == tag) {
-				Debug.Log ("No DMG");
+		
 			} else {
-				Debug.Log(col + "Recived DMG");
+
 			}
 			break;
 		case "Collider.Def":
 			if (col.tag == tag) {
-				Debug.Log("No DMG");
+	
 			} else {
-				Debug.Log(name + "Recived DMG");
+	
 			}
 			break;
 		}
